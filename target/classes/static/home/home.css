@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.home-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.home-container h1 {
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    margin-bottom: 20px;
+}
+
+.home-container a {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home-container a:hover {
+    background-color: #0056b3;
+}

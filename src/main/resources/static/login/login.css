@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    min-height: 300px; /* Ensures minimum space for content */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative; /* Ensure elements inside the form stay relative */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Space above the button */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#errorMessage {
+    margin-top: 10px;
+    color: red;
+    padding: 10px;
+    background-color: #fdd;
+    border: 1px solid red;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    position: absolute; /* Ensure the error message stays inside the form */
+    bottom: 80px; /* Position above the button */
+    left: 0;
+    right: 0;
+}
+
+/* CAPTCHA container styling */
+#captchaContainer {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#captchaText {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#captchaInput {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}

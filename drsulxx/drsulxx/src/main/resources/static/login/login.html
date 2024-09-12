@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css"> <!-- Your combined login and CAPTCHA styles -->
+</head>
+<body>
+
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- CAPTCHA container -->
+        <div id="captchaContainer" style="display:none;"> <!-- Initially hidden -->
+            <span id="captchaText" class="captcha-text"></span> <!-- CAPTCHA text -->
+            <input type="text" id="captchaInput" placeholder="Enter CAPTCHA"> <!-- CAPTCHA input field -->
+        </div>
+
+        <button type="submit">Login</button>
+        <button type="button" id="resetPasswordBtn">Forgot Password</button> <!-- Reset password button -->
+    </form>
+
+    <div id="errorMessage" style="display:none;color:red;"></div>
+
+    <script src="login.js"></script> <!-- All your login and CAPTCHA logic in one file -->
+</body>
+</html>
